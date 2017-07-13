@@ -1,0 +1,72 @@
+package com.util;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.commons.net.ftp.FTP;
+import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPReply;
+
+public class FtpUtil {
+	
+	public static boolean uploadPic(String host, int port, String username, String password, String basePath,
+			String filePath, String filename, InputStream input){
+		boolean result = false;
+		FTPClient ftp = new FTPClient();
+		
+		try {
+			int reply;
+			ftp.connect(host,port);// 连接FTP服务器
+			ftp.login(username, password);//登录
+			reply = ftp.getReplyCode();
+			if(!FTPReply.isPositiveCompletion(reply)){
+				ftp.disconnect();
+				return result;
+			}
+			if(!ftp.changeWorkingDirectory(basePath+filename)){
+				String[] dirs = filePath.split("/");
+				String temPath = basePath;
+				for (String dir : dirs) {
+					if(null == dir || "".equals(dir)) continue;
+					temPath += "/"+dir;
+					if(!ftp.changeWorkingDirectory(temPath)){
+						if(!ftp.makeDirectory(temPath)){
+							return result;
+						}else{
+							ftp.changeWorkingDirectory(temPath);
+						}
+						
+					}
+				}
+			}
+			//设置上传类型为二进制
+			ftp.setFileType(FTP.BINARY_FILE_TYPE);
+			//上传
+			if(!ftp.storeFile(filename, input)){
+				return result;
+			}
+			input.close();
+			ftp.logout();
+			result = true;
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			if(ftp.isConnected()){
+				try {
+					ftp.disconnect();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		
+		return result;
+		
+		
+	}
+
+}

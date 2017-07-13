@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.mapper.UserMapper">
+	<select id="selectAll" resultType="com.pojo.User_table">
+		select * from user_test;
+			</select>
+		<select id="finduser" resultType="com.pojo.User_table">
+			select * from user_test 
+			<where>
+	 		
+	 		<if test="name!=null and name.trim().length()>0">
+	 			and name like '%'||#{name}||'%'
+	 		</if>
+			</where>
+		</select>
+</mapper>

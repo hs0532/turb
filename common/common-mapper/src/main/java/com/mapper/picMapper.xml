@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.mapper.picMapper">
+	<select id="selectPic" resultType="com.pojo.User_table">
+		select * from pic where name = #{name};
+			</select>
+		<select id="insertPic" resultType="com.pojo.User_table">
+			insert into pic (name,url) values (#{name},#{url})   ;
+		</select>
+</mapper>
