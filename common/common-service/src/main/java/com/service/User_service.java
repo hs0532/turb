@@ -2,23 +2,36 @@ package com.service;
 
 
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mapper.UserMapper;
+import com.mapper.UsersMapper;
+import com.pojo.User;
 import com.pojo.User_table;
 @Service
 public class User_service {
 	@Autowired
 	private UserMapper mapper;
+	@Autowired
+	private UsersMapper usermapper;
 	
 	public List<User_table> getUser(){
 		return mapper.selectAll();
 	}
 	public List<User_table>  selectUser(String name){
 		return mapper.finduser(name);
+	}
+	public User checkUser(String name){
+		return usermapper.finduser(name);
+	}
+	public String addUser(User user){
+		user.setCreatedate(new Date());
+		usermapper.insert(user);
+		return "success";
 	}
 	
 

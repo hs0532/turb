@@ -1,0 +1,14 @@
+package com.mapper;
+
+import java.util.List;
+
+import com.pojo.User;
+
+
+
+public interface UsersMapper {
+	List<User> finduser(String name);
+	int insert(User user);
+	
+
+}

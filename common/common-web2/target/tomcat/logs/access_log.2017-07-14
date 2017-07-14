@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:12:18 +0800] "GET /common-web2/user/checklogin HTTP/1.1" 500 4088 http-bio-8080-exec-1 1427
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/user/login HTTP/1.1" 200 6472 http-bio-8080-exec-2 2373
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/js/jquery-1.8.0.min.js HTTP/1.1" 304 - http-bio-8080-exec-3 32
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/js/jquery.easyui.min.js HTTP/1.1" 304 - http-bio-8080-exec-4 24
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/images/face.jpg HTTP/1.1" 304 - http-bio-8080-exec-8 31
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/js/easyui-lang-zh_CN.js HTTP/1.1" 304 - http-bio-8080-exec-5 41
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/js/jquery-easyui/themes/default/easyui.css HTTP/1.1" 304 - http-bio-8080-exec-6 51
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/js/jquery-easyui/themes/icon.css HTTP/1.1" 304 - http-bio-8080-exec-7 64
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:13:59 +0800] "GET /common-web2/images/u3.jpg HTTP/1.1" 304 - http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [14/Jul/2017:18:14:04 +0800] "GET /common-web2/user/checklogin?username=test&password=zxc123456 HTTP/1.1" 200 7 http-bio-8080-exec-1 43
