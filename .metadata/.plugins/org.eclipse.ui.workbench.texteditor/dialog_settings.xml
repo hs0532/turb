@@ -2,15 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="password" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="signup_password"/>
+			<item value="signup_username"/>
+			<item value="signup_email"/>
+			<item value="sign_form"/>
+			<item value="passowrd"/>
+			<item value="chec"/>
 			<item value="spring"/>
 		</list>
 		<list key="replacehistory">
+			<item value="password"/>
+			<item value="username"/>
+			<item value="email"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
