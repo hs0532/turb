@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -61,17 +62,19 @@ public class UserController {
 		}
 		return is;
 	}
-	
-	public String checkUsername(String username){
+	@RequestMapping(value="/checkUsername/{username}",method=RequestMethod.POST)
+	@ResponseBody
+	public String checkUsername(@PathVariable String username){
 		User user  = service.checkUser(username);
 		String is = "fails";
 		if(user==null){
-			is = "seccuss";
+			is = "success";
 		}
+		System.out.println("验证步骤");
 		return is;
 	}
 	
-	@RequestMapping(value= "/userRegister",method=RequestMethod.POST)
+	@RequestMapping(value= "userRegister",method=RequestMethod.POST)
 	@ResponseBody
 	public String check(User user){
 		System.out.println(user.toString());
