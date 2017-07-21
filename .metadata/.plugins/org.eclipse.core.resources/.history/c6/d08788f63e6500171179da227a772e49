@@ -1,9 +1,0 @@
-package com.mapper;
-
-import com.pojo.picpojo;
-
-public interface picMapper {
-	int insertPic(picpojo picpojo);
-	picpojo selectPic(String name);
-
-}

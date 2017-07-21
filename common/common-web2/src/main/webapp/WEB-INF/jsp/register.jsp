@@ -1,3 +1,8 @@
+<%@ page contentType="text/html;charset=UTF-8"
+	trimDirectiveWhitespaces="true" language="java"%>
+<%@page import="com.pojo.User_table"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
@@ -176,9 +181,35 @@
 			height: 24px;
 			width: 24px;
 		}
+		
+    	.bclom{
+    				
+					display: none;
+    				vertical-align: middle;
+				    width: 14px;
+				    height: 14px;
+				    background-position: 0 -288px;
+				    background-image: url(../images/glb_v2.png);
+				  
+				    
+			}
     </style>
     <script type="text/javascript">
+ 
+	
+	
+		
     	$(function(){
+    		$('#username').blur(function(){
+				alert("nihao");
+				$("#b1").css("display","block");
+			});
+    	 $('#username').blur(function(){
+    				alert("nihao");
+					$("#b1").css("display","block");
+    			}); 
+    		
+    		
 			$("button").click(function(){
 			if($("#email").val()==""||$("#password").val()==""||$("#signup_confirm_password").val()==""||$("#username").val()=="")
 			{
@@ -213,7 +244,9 @@
 			
 		});
 	});
-    </script>
+   
+  
+   </script>
 </head>
 <body>
     <div id="login_bg" class ="login_bg" style="background-image:url(../images/blog_bg.jpg);"></div>
@@ -235,6 +268,8 @@
                                 </div>
                                 <div class="form_username">
            							<input type="text" name="username" placeholder="Username" id="username">
+           							<b class="bclom" id = "b1" ></b>
+           							
         						</div>
                                 <div class="form_password">
            							<input type="password" name="password" placeholder="Password" id="password">
