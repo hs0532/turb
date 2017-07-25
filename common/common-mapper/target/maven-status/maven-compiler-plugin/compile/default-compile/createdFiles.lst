@@ -1,3 +1,6 @@
 com\mapper\UserMapper.class
 com\mapper\UsersMapper.class
 com\mapper\picMapper.class
+com\jedis\jedisimpl\JedisDAOClusterImpl.class
+com\jedis\JedisDAO.class
+com\jedis\jedisimpl\JedisDAOSingleImpl.class

@@ -1,4 +1,5 @@
 com\jdbc\util\jdbcUtil.class
+com\util\JsonUtils.class
 com\service\Pic_service.class
 com\service\ImageService.class
 com\service\User_service.class
