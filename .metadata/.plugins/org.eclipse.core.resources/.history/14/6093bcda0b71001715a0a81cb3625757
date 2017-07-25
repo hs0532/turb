@@ -1,0 +1,57 @@
+package com.service;
+
+
+
+import java.util.Date;
+import java.util.List;
+
+import javax.swing.JEditorPane;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jedis.JedisDAO;
+import com.mapper.UserMapper;
+import com.mapper.UsersMapper;
+import com.pojo.User;
+import com.pojo.User_table;
+import com.util.JsonUtils;
+@Service
+public class User_service {
+	@Autowired
+	private UserMapper mapper;
+	@Autowired
+	private UsersMapper usermapper;
+	
+	
+	public List<User_table> getUser(){
+		return mapper.selectAll();
+	}
+	public List<User_table>  selectUser(String name){
+		List<User_table> list = mapper.finduser(name);
+		//向缓存中添加内容
+				try {
+					//把list转换成字符串
+					String cacheString = JsonUtils.objectToJson(list);
+					
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+
+		return list;
+	}
+	public User checkUser(String name){
+		
+		return usermapper.finduser(name);
+	}
+	public String addUser(User user){
+		user.setCreatedate(new Date());
+		usermapper.insert(user);
+		
+		return "success";
+	}
+	
+
+}
+

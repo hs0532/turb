@@ -1,6 +1,10 @@
-com\trebo\controller\index.class
 com\trebo\controller\uploud.class
-com\trebo\controller\test.class
 com\trebo\controller\indexController.class
+com\trebo\jedis\jedisimp\JedisDAOSingleImpl.class
 com\trebo\controller\UserController.class
+com\trebo\jedis\jedisimp\JedisDAOClusterImpl.class
+com\trebo\controller\index.class
+com\trebo\controller\test.class
+com\trebo\jedis\JedisDAO.class
+com\trebo\jedis\JedisClient.class
 com\trebo\controller\testIndex.class
