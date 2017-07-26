@@ -243,14 +243,14 @@ input, button {
 				type : "post",
 
 				success : function(data) {
-					alert(data);
+					//alert(data);
 					if ("success" == data) {
-						alert("用户名可用");
+						//alert("用户名可用");
 						$("#b1").css("display", "block");
 						$("#b2").css("display", "none");
 						nameflag=true;
 					} else {
-						alert("已被使用");
+						//alert("已被使用");
 						$("#b2").css("display", "block");
 						$("#b1").css("display", "none");
 						nameflag=false;

@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [25/Jul/2017:18:06:01 +0800] "GET /common-web2/user/checklogin?username=test2&password=zxc123456 HTTP/1.1" 200 7 http-bio-8080-exec-1 1402
-0:0:0:0:0:0:0:1 - - [25/Jul/2017:18:06:09 +0800] "GET /common-web2/user/checklogin?username=test&password=zxc123456 HTTP/1.1" 200 7 http-bio-8080-exec-2 20
-0:0:0:0:0:0:0:1 - - [25/Jul/2017:18:06:25 +0800] "GET /common-web2/user/checklogin?username=user&password=123 HTTP/1.1" 200 7 http-bio-8080-exec-3 12

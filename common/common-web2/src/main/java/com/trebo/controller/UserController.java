@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.alibaba.druid.support.json.JSONUtils;
 import com.pojo.User;
 import com.pojo.User_table;
+import com.pojo.picpojo;
+import com.service.ImageService;
 import com.service.User_service;
 
 @Controller
@@ -20,6 +22,9 @@ import com.service.User_service;
 public class UserController {
 	@Autowired
 	private User_service service;
+	
+	@Autowired
+	private ImageService picservice;
 
 	@RequestMapping("/list")
 	public String user(Model model) {
@@ -38,6 +43,12 @@ public class UserController {
 		return "pic";
 	}
 
+	@RequestMapping("/allImage")
+	@ResponseBody
+	public List<picpojo> allImage(){
+		return picservice.allImage();
+	}
+	
 	@RequestMapping("ajax")
 	@ResponseBody
 	public List<User_table> ajax(String uname) {
@@ -56,9 +67,10 @@ public class UserController {
 	public String check(String username,String password){
 		User user  = service.checkUser(username);
 		String is = "faild";
-		System.out.println(user.toString()+"++++"+username);
+		
 		if(user!=null&&password.equals(user.getpassword())){
 			is = "seccuss";
+			System.out.println(user.toString()+"++++"+username);
 		}
 		return is;
 	}

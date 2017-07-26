@@ -65,8 +65,11 @@ public class User_service {
 			String cache = jedisDAO.hget("checkuser", name+"");
 			if (!StringUtils.isEmpty(cache)) {//if(cache!=null && cache.trim().length()>0)
 				//将cache转回到List<TbContent>
-				List<User> list = JsonUtils.jsonToList(cache, User.class);
-				User retList = list.get(0);
+				User list = JsonUtils.jsonToPojo(cache, User.class);
+				User retList = null;
+				if(list!=null){
+					retList = list;
+				}
 				System.out.println("缓存查询");
 				return retList;
 			}
@@ -75,6 +78,7 @@ public class User_service {
 			e.printStackTrace();
 		}
 		User list = usermapper.finduser(name);
+		if(list!=null){
 		String categoryId = list.getUsername(); 
 		//向缓存中添加内容
 				try {
@@ -85,6 +89,7 @@ public class User_service {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+		}
 
 		return list;
 	

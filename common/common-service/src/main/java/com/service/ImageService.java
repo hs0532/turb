@@ -1,6 +1,7 @@
 package com.service;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,9 @@ public class ImageService {
 	
 	public picpojo lookPic(String name){
 		return mapper.selectPic(name);
+	}
+	public List<picpojo> allImage(){
+		return mapper.getImage();
 	}
 	
 	
