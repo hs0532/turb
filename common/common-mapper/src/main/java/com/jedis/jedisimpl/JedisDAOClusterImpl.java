@@ -5,7 +5,11 @@ import com.jedis.JedisDAO;
 
 
 
-
+/**
+ * 在redis新建key 读取key 
+ * @author to
+ *
+ */
 //@Repository
 public class JedisDAOClusterImpl implements JedisDAO{
 
