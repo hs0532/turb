@@ -1,12 +1,3 @@
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:06:17 +0800] "GET /common-web2/user/register HTTP/1.1" 200 7742 http-bio-8080-exec-1 1969
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:06:17 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:03 +0800] "POST /common-web2/user/checkUsername/xiaoli HTTP/1.1" 200 7 http-bio-8080-exec-5 91833
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:03 +0800] "POST /common-web2/user/checkUsername/xiaoli HTTP/1.1" 200 7 http-bio-8080-exec-4 94220
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:03 +0800] "POST /common-web2/user/checkUsername/xiaoli HTTP/1.1" 200 7 http-bio-8080-exec-6 75864
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:31 +0800] "POST /common-web2/user/checkUsername/xiaoli HTTP/1.1" 200 7 http-bio-8080-exec-8 31
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:37 +0800] "POST /common-web2/user/checkUsername/user HTTP/1.1" 200 5 http-bio-8080-exec-10 97
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:44 +0800] "POST /common-web2/user/checkUsername/xiaoli HTTP/1.1" 200 7 http-bio-8080-exec-10 17
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:49 +0800] "POST /common-web2/user/userRegister HTTP/1.1" 200 7 http-bio-8080-exec-10 115
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:49 +0800] "GET /common-web2/user/login HTTP/1.1" 200 6472 http-bio-8080-exec-10 229
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:50 +0800] "GET /common-web2/images/u3.jpg HTTP/1.1" 304 - http-bio-8080-exec-10 17
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:11:08:57 +0800] "GET /common-web2/user/checklogin?username=xiaoli&password=123 HTTP/1.1" 200 7 http-bio-8080-exec-10 55
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:16:22:43 +0800] "GET /common-web2/user/register HTTP/1.1" 200 7742 http-bio-8080-exec-1 2825
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:16:22:44 +0800] "GET /common-web2/images/glb_v2.png HTTP/1.1" 304 - http-bio-8080-exec-7 18
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:16:22:48 +0800] "GET /common-web2/user/login HTTP/1.1" 200 6472 http-bio-8080-exec-8 243

@@ -101,11 +101,6 @@ public class UserController {
 		return is;
 	}
 	
-	/**
-	 * 注册新用户
-	 * @param user
-	 * @return
-	 */
 	@RequestMapping(value= "userRegister",method=RequestMethod.POST)
 	@ResponseBody
 	public String check(User user){

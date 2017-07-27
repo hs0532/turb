@@ -60,13 +60,7 @@ public class User_service {
 
 		return list;
 	}
-	/**
-	 * 用户验证
-	 * @param name
-	 * @return
-	 */
 	public User checkUser(String name){
-		// 先查询缓存，若缓存中查询不到，进行数据库查询
 		try {
 			String cache = jedisDAO.hget("checkuser", name+"");
 			if (!StringUtils.isEmpty(cache)) {//if(cache!=null && cache.trim().length()>0)

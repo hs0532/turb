@@ -84,11 +84,6 @@ public class UserController {
 		}
 		return is;
 	}
-	/**
-	 * 验证用户名是否可用
-	 * @param username
-	 * @return
-	 */
 	@RequestMapping(value="/checkUsername/{username}",method=RequestMethod.POST)
 	@ResponseBody
 	public String checkUsername(@PathVariable String username){
@@ -101,11 +96,6 @@ public class UserController {
 		return is;
 	}
 	
-	/**
-	 * 注册新用户
-	 * @param user
-	 * @return
-	 */
 	@RequestMapping(value= "userRegister",method=RequestMethod.POST)
 	@ResponseBody
 	public String check(User user){
