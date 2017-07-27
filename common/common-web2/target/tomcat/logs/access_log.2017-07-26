@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [26/Jul/2017:18:16:57 +0800] "GET /common-web2/user/checklogin?username=mmm&password=123 HTTP/1.1" 200 5 http-bio-8080-exec-1 773
-0:0:0:0:0:0:0:1 - - [26/Jul/2017:18:17:05 +0800] "GET /common-web2/user/register HTTP/1.1" 200 7742 http-bio-8080-exec-2 1779
-0:0:0:0:0:0:0:1 - - [26/Jul/2017:18:17:18 +0800] "POST /common-web2/user/checkUsername/nexus HTTP/1.1" 200 7 http-bio-8080-exec-3 471
-0:0:0:0:0:0:0:1 - - [26/Jul/2017:18:17:22 +0800] "POST /common-web2/user/userRegister HTTP/1.1" 200 7 http-bio-8080-exec-4 125
-0:0:0:0:0:0:0:1 - - [26/Jul/2017:18:17:22 +0800] "GET /common-web2/user/login HTTP/1.1" 200 6472 http-bio-8080-exec-5 226

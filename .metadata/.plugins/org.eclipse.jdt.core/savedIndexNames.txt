@@ -26,7 +26,6 @@ INDEX VERSION 1.129+E:\Test\Neon\.metadata\.plugins\org.eclipse.jdt.core
 2580901727.index
 4080301864.index
 2975765589.index
-470146407.index
 3879858095.index
 3232646780.index
 111800492.index
@@ -51,7 +50,6 @@ INDEX VERSION 1.129+E:\Test\Neon\.metadata\.plugins\org.eclipse.jdt.core
 3483417685.index
 2589648071.index
 3258939722.index
-1123183249.index
 2882476708.index
 3388546474.index
 1363593033.index
