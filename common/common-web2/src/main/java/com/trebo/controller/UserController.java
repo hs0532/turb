@@ -103,6 +103,7 @@ public class UserController {
 	
 	/**
 	 * 注册新用户
+	 * 注册
 	 * @param user
 	 * @return
 	 */
