@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:16:22:43 +0800] "GET /common-web2/user/register HTTP/1.1" 200 7742 http-bio-8080-exec-1 2825
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:16:22:44 +0800] "GET /common-web2/images/glb_v2.png HTTP/1.1" 304 - http-bio-8080-exec-7 18
-0:0:0:0:0:0:0:1 - - [27/Jul/2017:16:22:48 +0800] "GET /common-web2/user/login HTTP/1.1" 200 6472 http-bio-8080-exec-8 243
