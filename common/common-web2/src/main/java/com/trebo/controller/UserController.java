@@ -103,7 +103,7 @@ public class UserController {
 	
 	/**
 	 * 注册新用户
-	 * 注册
+	 * 注册 更新测试2
 	 * @param user
 	 * @return
 	 */
