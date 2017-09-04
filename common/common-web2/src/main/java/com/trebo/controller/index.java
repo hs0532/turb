@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 // 更新测试
 import com.obj.User;
 import com.service.UserService;
-
+//测试提交
 public class index extends HttpServlet{
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
