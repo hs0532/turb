@@ -215,6 +215,7 @@ input, button {
 	font-family: "黑体";
 	font-size: small;
 	text-align: center;
+	font: 13px/1.4 "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif
 }
 
 .divline {
@@ -321,7 +322,7 @@ input, button {
 							<span style="display: inline-block"><input type="text"
 								name="username" placeholder="Username" id="username"></span> <span
 								style="display: inline-block"> <b class="bclom" id="b1"></b>
-								<b class="bclom2" id="b2">用户名已存在，请重新输入</b>
+								<b class="bclom2" id="b2"><strong>&nbsp&nbsp User already exists</strong> </b>
 							</span>
 
 
