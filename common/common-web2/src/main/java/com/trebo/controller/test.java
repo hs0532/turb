@@ -25,6 +25,7 @@ public class test {
 	 * 
 	 * 分支测试
 	 */
+	// 远程库修改！
 
 	public void testSpringJedisSingle() {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext-*.xml");
