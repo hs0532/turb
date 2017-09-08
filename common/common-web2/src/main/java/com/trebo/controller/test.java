@@ -22,6 +22,8 @@ public class test {
 	 * <p>Title: testSpringJedisSingle</p>
 	 * <p>Description: </p>
 	 * 111111111111111111 2017-09-08
+	 * 
+	 * 分支测试
 	 */
 
 	public void testSpringJedisSingle() {
