@@ -23,6 +23,7 @@ public class test {
 	 * <p>Description: </p>
 	 * 111111111111111111 2017-09-08
 	 */
+	// 远程库修改！
 
 	public void testSpringJedisSingle() {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext-*.xml");
