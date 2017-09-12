@@ -28,12 +28,9 @@ public class UserController {
 
 	@RequestMapping("/list")
 	public String user(Model model) {
-		System.out.println("用户遍历信息如下：");
+		//System.out.println("用户遍历信息如下：");
 		List<User_table> users = service.getUser();
-		for (User_table user_table : users) {
-			String userStr = user_table.toString();
-			System.out.println(userStr);
-		}
+	
 		model.addAttribute("user", users);
 		return "index";
 	}
