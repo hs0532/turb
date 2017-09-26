@@ -19,7 +19,7 @@ public class ImageService {
 	final int port = 21;
 	final String username = "ftpUser";
 	final String password = "1234";
-	final String basePath = "/pic";
+	final String basePath = "pic";
 	
 
 	@Autowired
@@ -45,7 +45,7 @@ public class ImageService {
 		poji.setName(name);
 		poji.setUrl(url);
 		mapper.insertPic(poji);
-		return "成功";
+		return "succuss";
 	}
 	
 	public picpojo lookPic(String name){

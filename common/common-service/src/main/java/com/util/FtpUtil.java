@@ -28,16 +28,23 @@ public class FtpUtil {
 				return result;
 			}
 			if(!ftp.changeWorkingDirectory(basePath+filename)){
+				ftp.changeWorkingDirectory("pic");
 				String[] dirs = filePath.split("/");
 				String temPath = basePath;
 				for (String dir : dirs) {
 					if(null == dir || "".equals(dir)) continue;
 					temPath += "/"+dir;
-					if(!ftp.changeWorkingDirectory(temPath)){
-						if(!ftp.makeDirectory(temPath)){
+					if(!ftp.changeWorkingDirectory(dir)){
+						//System.out.println(": "+temPath);
+						String[] rt=ftp.doCommandAsStrings("pwd","");  
+						  for(int i=0;i<rt.length;i++){  
+					            System.out.println(rt[i]);  
+					        }  
+						if(!ftp.makeDirectory(dir)){
+							System.out.println("在目标服务器上建立了文件夹失败: "+dir);
 							return result;
 						}else{
-							ftp.changeWorkingDirectory(temPath);
+							ftp.changeWorkingDirectory(dir);
 						}
 						
 					}
