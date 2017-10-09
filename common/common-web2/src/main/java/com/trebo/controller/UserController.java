@@ -40,6 +40,10 @@ public class UserController {
 		return "pic";
 	}
 
+	@RequestMapping("gantt")
+	public String gantt(){
+		return "gantt";
+	}
 	/**
 	 * 遍历图片
 	 * @return
